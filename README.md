@@ -11,3 +11,13 @@ Se ordenan las provincias argentinas de acuerdo a su superficie, y se grafican m
 ![](provincia_superficie/viz.png)
 
 2023-04-09
+
+## Animación de un corazón
+
+Archivo .gif de un corazón.
+
+[Script](corazon_gif/script__001.R)
+
+![](provincia_superficie/viz.gif)
+
+2023-04-10
