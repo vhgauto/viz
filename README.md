@@ -18,6 +18,6 @@ Archivo .gif de un corazón.
 
 [Script](corazon_gif/script__001.R)
 
-![](provincia_superficie/viz.gif)
+![](https://raw.githubusercontent.com/vhgauto/viz/main/corazon_gif/viz.gif)
 
 2023-04-10
