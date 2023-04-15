@@ -6,9 +6,16 @@ library(rgeos)
 library(maptools)
 library(rgdal)
 
+
+# script basado enteramente en 'The rectangularness of countries'
+browseURL("https://pappubahry.com/misc/rectangles/")
+
+# código original, con descripción
 browseURL("https://pappubahry.com/misc/rectangles/code/")
 
-browseURL("https://pappubahry.com/misc/rectangles/")
+# crear previamente estas carpetas
+dir.create("provincia_rectangulo/images_no_title/")
+dir.create("provincia_rectangulo/iterations/")
 
 tau = 2*pi
 
