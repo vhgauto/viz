@@ -31,3 +31,13 @@ Qué tan rectangulares son nuestras provincias. A partir de este post, ["The rec
 ![](provincia_rectangulo/viz.png)
 
 2023-04-15
+
+## Mapa topográfico de Argentina
+
+Relieve continental y del lecho marino de Argentina, siguiendo este [tutorial](https://www.youtube.com/watch?v=zoLChBALc1k).
+
+[Scripts](mapa_topografico/)
+
+![](mapa_topografico/viz.png)
+
+2023-04-19
