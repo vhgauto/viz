@@ -9,6 +9,7 @@
 /nombres
 /provincia_circulo
 /mapa_topografico/arg_continental.R
+/mapa_topografico/arg_continental.gpkg
 
 # History files
 .Rhistory
