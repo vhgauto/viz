@@ -86,6 +86,10 @@ f_prettymap <- function(x) {
     tag_f <- glue("{tag_ciudad}, {tag_pcia}")
   }
   
+  if (tag_pcia == "Capital Federal") {
+    tag_f <- "Ciudad Autónoma de<br>Buenos Aires"
+  }
+  
   # figura
   g1 <- ggplot() +
     # fondo 
@@ -125,6 +129,6 @@ f_prettymap <- function(x) {
 
 }
 
-map(.x = 1:5, ~ f_prettymap(x = .x))
+map(.x = 1:3, ~ f_prettymap(x = .x))
 # map() sobre todas las filas de .geojson, ciudad y provincia
 map(.x = 1:nrow(geojson_tbl), ~ f_prettymap(x = .x))
