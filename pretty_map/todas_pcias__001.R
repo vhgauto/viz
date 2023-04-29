@@ -61,6 +61,8 @@ f_prettymap <- function(x) {
   pcia_sf <- st_read(geojson_tbl$archivo[x])
   
   # asigno colores a los polígonos usando {MetBrewer}
+  # cada clase de cobertura le corresponde una paleta de colores, donde cada
+  # polígono es rellenado con un color aleatorio
   pcia_sf2 <- pcia_sf |> 
     mutate(fi = "grey", .before = geometry) |> 
     rowwise() |> 
@@ -121,7 +123,8 @@ f_prettymap <- function(x) {
 
   # guardo la figura
   ggsave(plot = g1,
-         filename = glue("pretty_map/map/{tag_pcia}_{tag_ciudad}.png"),
+         filename = glue("pretty_map/map/{str_remove_all(tag_pcia, ' ')}",
+                         "_{str_remove_all(tag_ciudad, ' ')}.png"),
          width = 30,
          height = 38.5,
          units = "cm",
@@ -129,6 +132,7 @@ f_prettymap <- function(x) {
 
 }
 
-map(.x = 1:3, ~ f_prettymap(x = .x))
+map(.x = 1, ~ f_prettymap(x = .x))
+
 # map() sobre todas las filas de .geojson, ciudad y provincia
 map(.x = 1:nrow(geojson_tbl), ~ f_prettymap(x = .x))
