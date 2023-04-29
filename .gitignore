@@ -10,6 +10,7 @@
 /provincia_circulo
 /mapa_topografico/arg_continental.R
 /mapa_topografico/arg_continental.gpkg
+/mapa_rayshader
 
 # History files
 .Rhistory
