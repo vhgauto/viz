@@ -2,25 +2,25 @@
 
 Figuras creadas usando **R**, de datos que me parezcan interesantes. Mi repositorio de Tidytuesday lo encuentran [acá](https://github.com/vhgauto/tidytuesday).
 
-## Provincias ordenadas por su superficie
+## Prettymaps de las ciudades capitales de Argentina
 
-Se ordenan las provincias argentinas de acuerdo a su superficie, y se grafican manteniendo la escala, para comparar los tamaños de las provincias.
+Tomando de base los mapas generados por [Prettymapp](https://chrieke-prettymapp-streamlit-prettymappapp-1k0qxh.streamlit.app/), hice mi propia versión con las capitales argentinas.
 
-[Script](provincia_superficie/script__001.R)
+[Scripts](pretty_map/)
 
-![](provincia_superficie/viz.png)
+![](pretty_map/map/Capital Federal_Obelisco.png)
 
-2023-04-09
+2023-04-19
 
-## Animación de un corazón
+## Mapa topográfico de Argentina
 
-Archivo .gif de un corazón.
+Relieve continental y del lecho marino de Argentina, siguiendo este [tutorial](https://www.youtube.com/watch?v=zoLChBALc1k).
 
-[Script](corazon_gif/script__001.R)
+[Scripts](mapa_topografico/)
 
-![](https://raw.githubusercontent.com/vhgauto/viz/main/corazon_gif/viz.gif)
+![](mapa_topografico/viz.png)
 
-2023-04-10
+2023-04-19
 
 ## Rectangularidad de las provincias argentinas
 
@@ -32,12 +32,28 @@ Qué tan rectangulares son nuestras provincias. A partir de este post, ["The rec
 
 2023-04-15
 
-## Mapa topográfico de Argentina
+## Animación de un corazón
 
-Relieve continental y del lecho marino de Argentina, siguiendo este [tutorial](https://www.youtube.com/watch?v=zoLChBALc1k).
+Archivo .gif de un corazón.
 
-[Scripts](mapa_topografico/)
+[Script](corazon_gif/script__001.R)
 
-![](mapa_topografico/viz.png)
+![](https://raw.githubusercontent.com/vhgauto/viz/main/corazon_gif/viz.gif)
 
-2023-04-19
+2023-04-10
+
+## Provincias ordenadas por su superficie
+
+Se ordenan las provincias argentinas de acuerdo a su superficie, y se grafican manteniendo la escala, para comparar los tamaños de las provincias.
+
+[Script](provincia_superficie/script__001.R)
+
+![](provincia_superficie/viz.png)
+
+2023-04-09
+
+
+
+
+
+
