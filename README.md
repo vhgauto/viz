@@ -8,7 +8,7 @@ Tomando de base los mapas generados por [Prettymapp](https://chrieke-prettymapp-
 
 [Scripts](pretty_map/)
 
-![](pretty_map/map/Capital Federal_Obelisco.png)
+![](pretty_map/map/CapitalFederal_Obelisco.png)
 
 2023-04-19
 
