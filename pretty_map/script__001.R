@@ -132,7 +132,5 @@ f_prettymap <- function(x) {
 
 }
 
-map(.x = 1, ~ f_prettymap(x = .x))
-
 # map() sobre todas las filas de .geojson, ciudad y provincia
 map(.x = 1:nrow(geojson_tbl), ~ f_prettymap(x = .x))
