@@ -155,7 +155,7 @@ cols <- colorRampPalette(rev(MetBrewer::met.brewer(palette_name = "Tam")))
 
 # texto
 tex <- tibble(
-  x = -64.73207, y = -34.76556,
+  x = -70, y = -34.76556,
   año = 2023, mes = meses[5],
   label = "Temperaturas mensuales en **Argentina**<br>período Ene/2010-Abr/2023")
 
