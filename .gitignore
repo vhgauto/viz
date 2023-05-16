@@ -11,6 +11,10 @@
 /mapa_topografico/arg_continental.R
 /mapa_topografico/arg_continental.gpkg
 /mapa_rayshader
+/clima_temperatura/datos
+/clima_temperatura/arg_continental.gpkg
+/clima_temperatura/key.txt
+/co2
 
 # History files
 .Rhistory
