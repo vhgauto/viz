@@ -2,6 +2,16 @@
 
 Figuras creadas usando **R**, de datos que me parezcan interesantes. Mi repositorio de Tidytuesday lo encuentran [acá](https://github.com/vhgauto/tidytuesday).
 
+## Mapa de temperaturas mensuales en Argentina
+
+Datos de temperatura mensual, desde enero 2020 a abril 2023, provenientes de [ERA5](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-land-monthly-means?tab=overview). Basado en [este](https://www.youtube.com/watch?v=2VHuaFqtAsY) tutorial.
+
+[Scripts](clima_temperatura/)
+
+![](clima_temperatura/viz.png)
+
+2023-05-15
+
 ## Prettymaps de las ciudades capitales de Argentina
 
 Tomando de base los mapas generados por [Prettymapp](https://chrieke-prettymapp-streamlit-prettymappapp-1k0qxh.streamlit.app/), hice mi propia versión con las capitales argentinas.
@@ -51,9 +61,3 @@ Se ordenan las provincias argentinas de acuerdo a su superficie, y se grafican m
 ![](provincia_superficie/viz.png)
 
 2023-04-09
-
-
-
-
-
-
