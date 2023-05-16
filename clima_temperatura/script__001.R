@@ -137,7 +137,9 @@ arg_temp_tbl2 <- arg_temp_tbl |>
   # selecciono columnas de interés
   dplyr::select(-fecha, -layer) |>
   # agrego los meses en texto (fct)
-  mutate(mes = meses[mes])
+  mutate(mes = meses[mes]) |> 
+  mutate(año = factor(año)) |> 
+  mutate(año = fct_rev(año))
 
 # figura ------------------------------------------------------------------
 
@@ -151,21 +153,31 @@ breaks <- classInt::classIntervals(
 # paleta de colores
 cols <- colorRampPalette(rev(MetBrewer::met.brewer(palette_name = "Tam")))
 
+# texto
+tex <- tibble(
+  x = -64.73207, y = -34.76556,
+  año = 2023, mes = meses[5],
+  label = "Temperaturas mensuales en **Argentina**<br>período Ene/2010-Abr/2023")
+
 # figura
 arg_mapa <- ggplot(data = arg_temp_tbl2) +
   # mapa
   geom_raster(aes(x = x, y = y, fill = temp)) +
   # contorno, p/mantener la relación de aspecto
   geom_sf(data = bb, color = NA, fill = NA) +
+  # texto
+  geom_richtext(
+    data = tex, aes(x = x, y = y, label = label), color = c1, 
+    family = "carlito", size = 11, hjust = 0, fill = NA, label.color = NA) +
   # grilla
-  facet_grid(año ~ mes, switch = "y") +
+  facet_grid(año ~ mes, switch = "both") +
   # manual
   scale_fill_gradientn(
     name = "Promedios\nmensuales (°C)",
     colors = cols(n = length(breaks)),
     limits = c(min(breaks), max(breaks)),
     breaks = seq(-20, 30, 10)) +
-  coord_sf() +
+  coord_sf(clip = "off") +
   # caption
   labs(caption = mi_caption) +
   # tema
@@ -179,7 +191,7 @@ arg_mapa <- ggplot(data = arg_temp_tbl2) +
     strip.text.y = element_markdown(
       family = "bebas", size = 30, color = "white"),
     strip.text.x = element_markdown(
-      family = "bebas", size = 30, color = "white", margin = margin(0, 0, 10, 0)),
+      family = "bebas", size = 30, color = "white", margin = margin(10, 0, 0, 0)),
     legend.margin = margin(10, 0, 0, 15),
     legend.key.height = unit(10, "mm"),
     legend.key.width = unit(42, "mm"),
