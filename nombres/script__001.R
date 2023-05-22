@@ -356,7 +356,7 @@ f_g <- function(sexo_i) {
       plot.title = element_markdown(
         size = 55, family = "libre", color = "white", hjust = .5, lineheight = 1.25),
       plot.subtitle = element_textbox_simple(
-        size = 20, family = "heebo", color = "gold", margin = margin(5, 0, 25, 0)),
+        size = 20, family = "heebo", color = "gold", margin = margin(5, 0, 25, -5)),
       plot.caption = element_markdown(
         color = "gold", hjust = .38, size = 12, margin = margin(10, 0, 2, 0)),
       # panel
