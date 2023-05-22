@@ -6,7 +6,7 @@
 /corazon_gif/viz.mp4
 /provincia_rectangulo/iterations
 /provincia_rectangulo/images_no_title
-/nombres
+/nombres/extra
 /provincia_circulo
 /mapa_topografico/arg_continental.R
 /mapa_topografico/arg_continental.gpkg
@@ -15,6 +15,7 @@
 /clima_temperatura/arg_continental.gpkg
 /clima_temperatura/key.txt
 /co2
+/concurso_carto/
 
 # History files
 .Rhistory
