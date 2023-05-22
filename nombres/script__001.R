@@ -349,7 +349,7 @@ f_g <- function(sexo_i) {
       text = element_text(color = "grey80"),
       aspect.ratio = 1,
       # plot
-      plot.margin = margin(5, 9, 5, 9),
+      plot.margin = margin(7, 10.1, 7, 10.1),
       plot.background = element_rect(
         fill = c3, color = "black", linewidth = 3),
       plot.title.position = "plot",
