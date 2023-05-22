@@ -2,6 +2,16 @@
 
 Figuras creadas usando **R**, de datos que me parezcan interesantes. Mi repositorio de Tidytuesday lo encuentran [acá](https://github.com/vhgauto/tidytuesday).
 
+## Popularidad de nombres en Argentina
+
+Tomando como inspiración esta [figura](https://nombres.datos.gob.ar/), grafiqué la evolución en popularidad de los 10 nombres más frecuentes (femeninos y masculinos). El portal de datos de Argentina tiene un [gráfico interactivo](https://nombres.datos.gob.ar/).
+
+[Scripts](nombres/)
+
+![](nombres/viz_M.png)
+
+2023-05-22
+
 ## Mapa de temperaturas mensuales en Argentina
 
 Datos de temperatura mensual, desde enero 2020 a abril 2023, provenientes de [ERA5](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-land-monthly-means?tab=overview). Basado en [este](https://www.youtube.com/watch?v=2VHuaFqtAsY) tutorial.

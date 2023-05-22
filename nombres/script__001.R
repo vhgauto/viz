@@ -5,7 +5,6 @@ browseURL("https://nombres.datos.gob.ar/")
 # figura estática, popularidad en el tiempo
 browseURL("https://www.chartr.co/newsletters/2023-05-15")
 
-
 # paquetes ----------------------------------------------------------------
 
 library(tidyverse)
