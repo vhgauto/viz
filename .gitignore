@@ -16,6 +16,11 @@
 /clima_temperatura/key.txt
 /co2
 /concurso_carto/
+ign_red_vial/L*
+ign_red_vial/r*
+ign_red_vial/arg*
+ign_agua/
+ign_trenes/
 
 # History files
 .Rhistory
