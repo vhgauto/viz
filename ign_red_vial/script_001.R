@@ -41,10 +41,6 @@ mi_caption <- glue("{fuente} {sep} {epsg} {sep} {autor} {sep} {icon_github} {ico
 
 browseURL("https://www.ign.gob.ar/NuestrasActividades/InformacionGeoespacial/CapasSIG")
 
-# polígono de Argentina
-p <- st_read("ign_red_vial/arg_continental.gpkg")
-# ggplot(data = p) + geom_sf()
-
 # leo los vectores de las redes viales
 l_nacional <- st_read("ign_red_vial/LíneaRed vial nacional.json") |> 
   mutate(obj = "nacional") |> 
@@ -78,12 +74,10 @@ etq_tbl <- tibble(obj = unique(rv$obj)) |>
 
 # figura
 g <- ggplot() +
-  # país
-  geom_sf(data = p, color = NA, fill = c2, linewidth = .25) +
   # red vial
   geom_sf(
     data = rv, aes(linewidth = obj), 
-    color = c3, show.legend = FALSE) +
+    color = "white", show.legend = FALSE) +
   # etiqueta
   geom_sf_text(
     data = etq_tbl, aes(label = label), 
@@ -100,7 +94,8 @@ g <- ggplot() +
   theme_void() +
   theme(
     plot.background = element_rect(fill = c1, color = c2, linewidth = 3),
-    plot.margin = margin(0, 2.5, 0, 2.5),
+    # plot.margin = margin(0, 2.5, 0, 2.5),
+    plot.margin = margin(0, 4, 0, 4),
     plot.title.position = "plot",
     plot.title = element_text(
       size = 50, color = c3, hjust = .5),
@@ -108,11 +103,17 @@ g <- ggplot() +
       hjust = .5, size = 15, color = c4, family = "ubuntu", 
       margin = margin(0, 0, 10, 0)),
     strip.text = element_blank()
-  ); ggsave(
+  )
+
+# guardo
+ggsave(
     plot = g,
     filename = "ign_red_vial/viz.png",
     width = 60,
     height = 44,
     units = "cm",
     dpi = 300
-  ); browseURL("ign_red_vial/viz.png")
+  )
+
+# abro
+browseURL("ign_red_vial/viz.png")
