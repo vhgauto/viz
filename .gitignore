@@ -22,6 +22,7 @@ ign_red_vial/arg*
 ign_agua/
 ign_trenes/
 ign_electricidad/
+ign_parques/area_protegida.*
 
 # History files
 .Rhistory
