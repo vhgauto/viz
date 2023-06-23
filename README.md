@@ -2,6 +2,14 @@
 
 Figuras creadas usando **R**, de datos que me parezcan interesantes. Mi repositorio de Tidytuesday lo encuentran [acá](https://github.com/vhgauto/tidytuesday).
 
+## Red Eléctrica de Argentina
+
+Datos del [Instituto Geográfico Nacional](https://www.ign.gob.ar/NuestrasActividades/InformacionGeoespacial/CapasSIG) de líneas de energía y plantas transformadoras.
+
+[Scripts](ign_electricidad/)
+
+![](ign_electricidad/viz.png)
+
 ## Parques Nacionales de Argentina
 
 Datos del [Instituto Geográfico Nacional](https://www.ign.gob.ar/NuestrasActividades/InformacionGeoespacial/CapasSIG) de áreas protegidas de Argentina.
