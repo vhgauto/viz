@@ -117,9 +117,9 @@ g_col <- parq_nac1 |>
   # líneas verticales de fondo
   geom_segment(
     data = verticales, aes(x = x, xend = xend, y = y, yend = yend),
-    color = c2, linewidth = .25) +
+    color = c2, linewidth = .1) +
   # segmentos horizontales, áreas de los parques
-  geom_segment(aes(x = 0, xend = a, yend = fila), color = c4, linewidth = 2) +
+  geom_segment(aes(x = 0, xend = a, yend = fila), color = c4, linewidth = .25) +
   # puntos, áreas de los parques, rombo
   geom_point(color = c5, fill = c7, size = 6, shape = forma) +
   # puntos, áreas de los parques, punto 
@@ -135,13 +135,14 @@ g_col <- parq_nac1 |>
     label.color = NA, vjust = 1) +
   # nombre de los parques
   geom_text(
-    aes(label = nam), nudge_x = 120, hjust = 0, color = c3, family = "ubuntu",
-    size = 7) +
+    aes(label = nam), nudge_x = 150, hjust = 0, color = c3, family = "ubuntu",
+    size = 6) +
   # ejes
   scale_x_continuous(
     breaks = seq(0, 6000, 1000), limits = c(0, 6000), expand = c(0, 0),
     labels = scales::label_number(big.mark = ".", decimal.mark = ",")) +
-  scale_y_continuous(labels = 32:1, breaks = 1:32, limits = c(-1, 34)) +
+  scale_y_continuous(
+    labels = c(32:10, glue("0{9:1}")), breaks = 1:32, limits = c(-1, 34)) +
   labs(y = NULL, x = "Área, km<sup>2</sup>") +
   coord_cartesian(clip = "off") +
   # tema
@@ -166,7 +167,7 @@ cen <- parq_nac1 |>
 # mapa
 g_sf <- ggplot() +
   # polígono Argentin
-  geom_sf(data = p, fill = c2, color = c7, linewidth = .1) +
+  geom_sf(data = p, fill = c2, color = c4, linewidth = .1) +
   # centroides de los parques, rombos
   geom_sf(data = cen, shape = forma, color = c5, fill = c7, size = 8) +
   # centroides de los parques, puntos
@@ -190,10 +191,12 @@ diseño <- "
 
 # __figura compuesta ------------------------------------------------------
 
+argentina <- glue("<span style='color:{c6};'>Arg</span>e<span style='color:gold;'>n</span>t<span style='color:{c6};'>ina</span>")
+
 g_comp <- g_sf + g_col +
   plot_layout(design = diseño, widths = c(1, .1, 1)) +
   plot_annotation(
-    title = glue("Parques Nacionales de <span style='color:{c6};'>Arg</span>ent<span style='color:{c6};'>ina</span>"),
+    title = glue("Parques Nacionales de {argentina}"),
     caption = mi_caption,
     theme = theme(
       plot.background = element_rect(
@@ -202,7 +205,7 @@ g_comp <- g_sf + g_col +
       plot.title.position = "plot",
       plot.title = element_markdown(
         hjust = .5, size = 80, family = "bebas", color = "white"),
-      plot.caption = element_markdown(hjust = .57, color = c5, size = 20)))
+      plot.caption = element_markdown(hjust = 1, color = c5, size = 20)))
 
 # guardo
 ggsave(
