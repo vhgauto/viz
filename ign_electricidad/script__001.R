@@ -111,7 +111,7 @@ g <- ggplot() +
   coord_sf(crs = 4326) +
   labs(
     title = "RED ELECTRICA ARGENTINA",
-    subtitle = "Las líneas representan las redes de alta tensión y<br>
+    subtitle = "Las líneas representan la red de alta tensión y<br>
     los puntos las plantas transformadoras.",
     caption = mi_caption) +
   theme_void() +
