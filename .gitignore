@@ -26,6 +26,8 @@ ign_electricidad/puntos*
 ign_parques/area_protegida.*
 /fuentes
 /espiral
+/osm/osm_gpkg/
+/osm_extras/
 
 # History files
 .Rhistory

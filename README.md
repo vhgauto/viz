@@ -2,6 +2,13 @@
 
 Figuras creadas usando **R**, de datos que me parezcan interesantes. Mi repositorio de Tidytuesday lo encuentran [acá](https://github.com/vhgauto/tidytuesday).
 
+## Ríos de Argetina
+Datos de OpenStreetMap, descargados de [Geofabrik](https://download.geofabrik.de/south-america.html). A cada observación le asigné un color distinto, para generar un mapa pintorezco.
+
+[Scripts](osm/)
+
+![](osm/viz.png)
+
 ## Red Eléctrica de Argentina
 
 Datos del [Instituto Geográfico Nacional](https://www.ign.gob.ar/NuestrasActividades/InformacionGeoespacial/CapasSIG) de líneas de energía y plantas transformadoras.
