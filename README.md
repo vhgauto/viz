@@ -8,7 +8,7 @@ Imagen de Chaco, Corrientes y el puente sobre el Río Paraná.
 
 [Scripts](mapa_relieve/script_puente.R)
 
-![](mapa_relieve/LQ_puente.png)
+![](mapa_relieve/puente.png)
 
 ## Ríos de Argetina
 
