@@ -2,7 +2,16 @@
 
 Figuras creadas usando **R**, de datos que me parezcan interesantes. Mi repositorio de Tidytuesday lo encuentran [acá](https://github.com/vhgauto/tidytuesday).
 
+## Chaco-Corrientes (relieve)
+
+Imagen de Chaco, Corrientes y el puente sobre el Río Paraná.
+
+[Scripts](mapa_relieve/script_puente.R)
+
+![](mapa_relieve/LQ_puente.png)
+
 ## Ríos de Argetina
+
 Datos de OpenStreetMap, descargados de [Geofabrik](https://download.geofabrik.de/south-america.html). A cada observación le asigné un color distinto, para generar un mapa pintorezco.
 
 [Scripts](osm/)
