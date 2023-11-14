@@ -14,7 +14,7 @@ Imagen de Chaco, Corrientes y el puente sobre el Río Paraná.
 
 Datos de OpenStreetMap, descargados de [Geofabrik](https://download.geofabrik.de/south-america.html). A cada observación le asigné un color distinto, para generar un mapa pintorezco.
 
-[Scripts](osm/)
+[Scripts](osm/script__001.R)
 
 ![](osm/viz.png)
 
@@ -22,7 +22,7 @@ Datos de OpenStreetMap, descargados de [Geofabrik](https://download.geofabrik.de
 
 Datos del [Instituto Geográfico Nacional](https://www.ign.gob.ar/NuestrasActividades/InformacionGeoespacial/CapasSIG) de líneas de energía y plantas transformadoras.
 
-[Scripts](ign_electricidad/)
+[Scripts](ign_electricidad/script__001.R)
 
 ![](ign_electricidad/viz.png)
 
@@ -30,7 +30,7 @@ Datos del [Instituto Geográfico Nacional](https://www.ign.gob.ar/NuestrasActivi
 
 Datos del [Instituto Geográfico Nacional](https://www.ign.gob.ar/NuestrasActividades/InformacionGeoespacial/CapasSIG) de áreas protegidas de Argentina.
 
-[Scripts](ign_parques/)
+[Scripts](ign_parques/script__001.R)
 
 ![](ign_parques/viz.png)
 
@@ -38,7 +38,7 @@ Datos del [Instituto Geográfico Nacional](https://www.ign.gob.ar/NuestrasActivi
 
 Datos del [Instituto Geográfico Nacional](https://www.ign.gob.ar/NuestrasActividades/InformacionGeoespacial/CapasSIG) de rutas a diferentes jurisdicciones.
 
-[Scripts](ign_red_vial/)
+[Scripts](ign_red_vial/script__001.R)
 
 ![](ign_red_vial/viz.png)
 
@@ -46,7 +46,7 @@ Datos del [Instituto Geográfico Nacional](https://www.ign.gob.ar/NuestrasActivi
 
 Tomando como inspiración esta [figura](https://nombres.datos.gob.ar/), grafiqué la evolución en popularidad de los 10 nombres más frecuentes (femeninos y masculinos). El portal de datos de Argentina tiene un [gráfico interactivo](https://nombres.datos.gob.ar/).
 
-[Scripts](nombres/)
+[Scripts](nombres/script__001.R)
 
 ![](nombres/viz_M.png)
 
@@ -56,7 +56,7 @@ Tomando como inspiración esta [figura](https://nombres.datos.gob.ar/), grafiqu�
 
 Datos de temperatura mensual, desde enero 2020 a abril 2023, provenientes de [ERA5](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-land-monthly-means?tab=overview). Basado en [este](https://www.youtube.com/watch?v=2VHuaFqtAsY) tutorial.
 
-[Scripts](clima_temperatura/)
+[Scripts](clima_temperatura/script__001.R)
 
 ![](clima_temperatura/viz.png)
 
@@ -66,7 +66,7 @@ Datos de temperatura mensual, desde enero 2020 a abril 2023, provenientes de [ER
 
 Tomando de base los mapas generados por [Prettymapp](https://chrieke-prettymapp-streamlit-prettymappapp-1k0qxh.streamlit.app/), hice mi propia versión con las capitales argentinas.
 
-[Scripts](pretty_map/)
+[Scripts](pretty_map/script__001.R)
 
 ![](pretty_map/map/CapitalFederal_Obelisco.png)
 
@@ -76,7 +76,7 @@ Tomando de base los mapas generados por [Prettymapp](https://chrieke-prettymapp-
 
 Relieve continental y del lecho marino de Argentina, siguiendo este [tutorial](https://www.youtube.com/watch?v=zoLChBALc1k).
 
-[Scripts](mapa_topografico/)
+[Scripts](mapa_topografico/script__001.R)
 
 ![](mapa_topografico/viz.png)
 
@@ -86,7 +86,7 @@ Relieve continental y del lecho marino de Argentina, siguiendo este [tutorial](h
 
 Qué tan rectangulares son nuestras provincias. A partir de este post, ["The rectangularness of countries"](https://pappubahry.com/misc/rectangles/), y con modificaciones menores, obtuve los mismos resultados pero aplicado a nuestra región.
 
-[Scripts](provincia_rectangulo/)
+[Scripts](provincia_rectangulo/script__001.R)
 
 ![](provincia_rectangulo/viz.png)
 
