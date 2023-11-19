@@ -2,6 +2,14 @@
 
 Figuras creadas usando **R**, de datos que me parezcan interesantes. Mi repositorio de Tidytuesday lo encuentran [acá](https://github.com/vhgauto/tidytuesday).
 
+## Argentina en la bandera Argentina
+
+Bandera de Argentina con el mapa de Argentina, con las letras de Argentina.
+
+[Scripts](arg_3x3/script_001.R)
+
+![](arg_3x3/arg.png)
+
 ## Chaco-Corrientes (relieve)
 
 Imagen de Chaco, Corrientes y el puente sobre el Río Paraná.
