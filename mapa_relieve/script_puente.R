@@ -88,6 +88,3 @@ img |>
 
 # abro
 browseURL("mapa_relieve/puente.png")
-
-
-

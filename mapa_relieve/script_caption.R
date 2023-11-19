@@ -21,10 +21,12 @@ c1 <- "firebrick"
 autor <- glue("Autor: <span style='color:{c1};'>**Víctor Gauto**</span>")
 icon_twitter <- glue("<span style='font-family:fa-brands;'>&#xf099;</span>")
 icon_github <- glue("<span style='font-family:fa-brands;'>&#xf09b;</span>")
+icon_mastodon <- glue("<span style='font-family:fa-brands;'>&#xf4f6;</span>")
 usuario <- glue("<span style='color:{c1};'>**vhgauto**</span>")
 sep <- glue("**|**")
 
-mi_caption <- glue("{autor} {sep} {icon_github} {icon_twitter} {usuario}")
+mi_caption <- glue(
+  "{autor} {sep} {icon_github} {icon_twitter} {icon_mastodon} {usuario}")
 
 # figura ------------------------------------------------------------------
 
@@ -35,14 +37,14 @@ g <- ggplot() +
   coord_cartesian(clip = "off") +
   theme_void() +
   theme(
-    aspect.ratio = 67/1028)
+    aspect.ratio = 59/1002)
 
 # guardo
 ggsave(
   plot = g,
   filename = "mapa_relieve/caption.png",
-  width = 1028,
-  height = 67,
+  width = 1114,
+  height = 71,
   units = "px")
 
 # abro
