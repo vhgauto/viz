@@ -28,6 +28,8 @@ ign_parques/area_protegida.*
 /espiral
 /osm/osm_gpkg/
 /osm_extras/
+/mapa_relieve_animado/png/
+/mapa_relieve_animado/S2/
 
 # History files
 .Rhistory
