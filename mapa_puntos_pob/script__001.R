@@ -161,7 +161,7 @@ arg_dif <- st_difference(bb, arg_posgar)
 # figura ------------------------------------------------------------------
 
 # ubicación de la flecha y texto
-flecha <- c(x = 4615305, y = 3903927, xend = 4437566, yend = 3928390)
+flecha <- c(x = 4615305, y = 3903927, xend = 4407566, yend = 3921090)
 flecha_label <- glue(
   "Cada círculo<br>abarca {area} km<sup>2</sup>")
 
@@ -195,9 +195,9 @@ g <- ggplot()+
     legend.position = c(.72, .3),
     legend.background = element_rect(fill = c4, color = NA),
     legend.margin = margin(10, 10, 10, 10),
-    legend.title = element_markdown(size = 30, hjust = 0),
+    legend.title = element_markdown(size = 30, hjust = 0, family = "ubuntu"),
     legend.justification = c(0, 0),
-    legend.text = element_markdown(size = 25, hjust = 0))
+    legend.text = element_markdown(size = 25, hjust = 0, family = "ubuntu"))
 
 # guardo
 ggsave(
