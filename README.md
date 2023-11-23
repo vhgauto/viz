@@ -2,6 +2,14 @@
 
 Figuras creadas usando **R**, de datos que me parezcan interesantes. Mi repositorio de Tidytuesday lo encuentran [acá](https://github.com/vhgauto/tidytuesday).
 
+## Densidad de población de Argentina
+
+Mapa de Argentina mostrando la distribución de la población.
+
+[Scripts](mapa_puntos_pob/script_001.R)
+
+![](mapa_puntos_pob/viz.png)
+
 ## Argentina en la bandera Argentina
 
 Bandera de Argentina con el mapa de Argentina, con las letras de Argentina.
