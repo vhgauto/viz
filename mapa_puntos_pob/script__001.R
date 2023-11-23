@@ -78,10 +78,10 @@ f_union <- function(x) {
 
 # lista que contiene todos los ráster recortados
 # lleva TIEMPO!!!
-lista_recorte <- map(lista_raster, f_union)
+# lista_recorte <- map(lista_raster, f_union)
 
 # creo una colección a partir de los recortes
-coleccion <- sprc(lista_recorte)
+# coleccion <- sprc(lista_recorte)
 
 # unifico
 # lleva TIEMPO!!!
