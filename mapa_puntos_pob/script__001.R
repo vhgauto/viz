@@ -92,7 +92,7 @@ f_union <- function(x) {
 arg_pob <- rast("mapa_puntos_pob/arg_pob.tif")
 
 # factor de reducción de los datos de población
-# que la figura final tenga 
+# que la figura final tenga 200 filas
 factor <- round(nrow(arg_pob)/200)
 
 # agrego los puntos quedando 200 filas
@@ -104,7 +104,6 @@ pob_agg[is.na(pob_agg)] <- 0
 
 # re proyecto a POSGAR
 pob_agg2 <- terra::project(pob_agg, "EPSG:5346")
-# writeRaster(pob_agg, "mapa_puntos_pob/pob_agg_5346.tif", overwrite = TRUE)
 
 # creo un tibble con las coordenas y la población
 pob_tib <- as.data.frame(
@@ -119,11 +118,9 @@ sf_pob <- pob_tib |>
     crs= st_crs(arg_posgar)) |> 
   rename(pob = 1)
 
-sf_pob <- st_read("mapa_puntos_pob/sf_pob.gpkg")
-
 # recorto a la extensión de Argentina
 sf_pob_crop <- st_crop(sf_pob, arg_posgar)
-# st_write(sf_pob_crop, "mapa_puntos_pob/sf_pob_crop.gpkg", append = FALSE)
+# st_write(sf_pob_crop, "mapa_puntos_pob/sf_pob_crop_100.gpkg", append = FALSE)
 
 # aplico la máscara de Argentina a los puntos en QGIS (tarda mucho tiempo en R)
 # ?????????????????????????
@@ -136,17 +133,18 @@ area <- round((resol/1000)^2, 0) # km2
 
 # calculo la densidad de población y divido en rangos
 sf_pob_mask_dens <- sf_pob_mask |> 
-  mutate(hab = pob*area) |> 
+  mutate(hab = pob/area) |> 
   mutate(rango = case_when(
     hab >= 1000 ~ "Mayor a 1.000",
     hab >= 100 & hab < 1000 ~ "100 - 1.000",
     hab >= 10 & hab < 100 ~ "10 - 100",
     hab >= 1 & hab < 10 ~ "1 - 10",
-    hab < 1 ~ "Menor a 1")) |> 
+    hab >= .1 & hab < 1 ~ "0,1 - 1",
+    hab < .1 ~ "Menor a 0,1")) |> 
   mutate(rango = fct(
     rango, 
     levels = c(
-      "Menor a 1", "1 - 10", "10 - 100", "100 - 1.000", 
+      "Menor a 0,1","0,1 - 1", "1 - 10", "10 - 100", "100 - 1.000", 
       "Mayor a 1.000")))
 
 # cantidad de rango, para scale_size_manual()
@@ -181,7 +179,7 @@ g <- ggplot()+
     hjust = 0, vjust = 0, fill = c4, family = "ubuntu", size = 8, 
     label.color = NA, label.r = unit(0, "lines"), label.padding = unit(.5, "lines")) +
   scale_size_manual(
-    values = seq(.25, 6, length.out = rangos)) +
+    values = seq(.2, 3.5, length.out = rangos)) +
   labs(
     title = "Densidad de Población\nArgentina",
     size = "Cantidad de<br>personas<br>por km<sup>2</sup>", caption = mi_caption) +
@@ -199,8 +197,7 @@ g <- ggplot()+
     legend.margin = margin(10, 10, 10, 10),
     legend.title = element_markdown(size = 30, hjust = 0),
     legend.justification = c(0, 0),
-    legend.text = element_markdown(size = 25, hjust = 0)
-  )
+    legend.text = element_markdown(size = 25, hjust = 0))
 
 # guardo
 ggsave(
