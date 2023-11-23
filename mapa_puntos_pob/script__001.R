@@ -153,6 +153,14 @@ sf_pob_mask_dens <- sf_pob_mask |>
 # cantidad de rango, para scale_size_manual()
 rangos <- unique(sf_pob_mask_dens$rango) |> length()
 
+# extensión de Argentina
+bb <- st_bbox(arg_posgar) |> 
+  st_as_sfc() |> 
+  st_as_sf()
+
+# diferencia entre extensión y Argentina, para remover el borde externo
+arg_dif <- st_difference(bb, arg_posgar)
+
 # figura ------------------------------------------------------------------
 
 # ubicación de la flecha y texto
@@ -163,7 +171,7 @@ flecha_label <- glue(
 # figura
 g <- ggplot()+
   geom_sf(data = pcias_posgar, fill = c4, color = c2, linewidth = .5) +
-  geom_sf(data = arg_posgar, fill = NA, color = c4, linewidth = 1.1) +
+  geom_sf(data = arg_dif, fill = c1, color = c1, linewidth = .6) +
   geom_sf(data = sf_pob_mask_dens, aes(size = rango, geometry = geom)) +
   annotate(
     geom = "curve", x = flecha["x"], y = flecha["y"], xend = flecha["xend"], 
