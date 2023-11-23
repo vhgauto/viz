@@ -30,6 +30,9 @@ ign_parques/area_protegida.*
 /osm_extras/
 /mapa_relieve_animado/png/
 /mapa_relieve_animado/S2/
+/mapa_puntos_pob/zip/
+/mapa_puntos_pob/arg_pob*
+/mapa_puntos_pob/sf_pob.gpkg
 
 # History files
 .Rhistory
