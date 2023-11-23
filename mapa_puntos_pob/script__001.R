@@ -142,12 +142,11 @@ sf_pob_mask_dens <- sf_pob_mask |>
     hab >= 100 & hab < 1000 ~ "100 - 1.000",
     hab >= 10 & hab < 100 ~ "10 - 100",
     hab >= 1 & hab < 10 ~ "1 - 10",
-    hab >= 1 & hab < 10 ~ "1 - 10",
     hab < 1 ~ "Menor a 1")) |> 
   mutate(rango = fct(
     rango, 
     levels = c(
-      "Menor a 1", "0,1 - 1", "1 - 10", "10 - 100", "100 - 1.000", 
+      "Menor a 1", "1 - 10", "10 - 100", "100 - 1.000", 
       "Mayor a 1.000")))
 
 # cantidad de rango, para scale_size_manual()
