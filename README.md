@@ -2,7 +2,15 @@
 
 Figuras creadas usando **R**, de datos que me parezcan interesantes. Mi repositorio de Tidytuesday lo encuentran [acá](https://github.com/vhgauto/tidytuesday).
 
-## Densidad de población de Argentina
+## Topografía de Argentina utilizando líneas horizontales
+
+Mapa del relieve de Argentina en estilo *joyplot*, o *ridgeline* (crestas).
+
+[Scripts](mapa_ridges/script_001.R)
+
+![](mapa_ridges/viz.png)
+
+## Densidad de población de Argentina con puntos
 
 Mapa de Argentina mostrando la distribución de la población.
 
