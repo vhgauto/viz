@@ -2,6 +2,14 @@
 
 Figuras creadas usando **R**, de datos que me parezcan interesantes. Mi repositorio de Tidytuesday lo encuentran [acá](https://github.com/vhgauto/tidytuesday).
 
+## Distribución de buzones en Argentina
+
+Ubicación de buzones en Argentina, con detalle en Buenos Aires y Ciudad Autónoma de Buenos Aires.
+
+[Scripts](buzones_arg/script_001.R)
+
+![](buzones_arg/viz.png)
+
 ## Topografía de Argentina utilizando líneas horizontales
 
 Mapa del relieve de Argentina en estilo *joyplot*, o *ridgeline* (crestas).
