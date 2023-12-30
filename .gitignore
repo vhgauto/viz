@@ -33,6 +33,7 @@ ign_parques/area_protegida.*
 /mapa_puntos_pob/zip/
 /mapa_puntos_pob/arg_pob*
 /mapa_puntos_pob/sf_pob.gpkg
+/buzones_arg/departamento.*
 
 # History files
 .Rhistory
