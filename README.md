@@ -2,6 +2,14 @@
 
 Figuras creadas usando **R**, de datos que me parezcan interesantes. Mi repositorio de Tidytuesday lo encuentran [acá](https://github.com/vhgauto/tidytuesday).
 
+## Topografía de Argentina con emojis
+
+Mapa de rangos de altura de Argentina, usando emojis de animales.
+
+[Scripts](mapa_letras/script_001.R)
+
+![](mapa_letras/viz.png)
+
 ## Distribución de buzones en Argentina
 
 Ubicación de buzones en Argentina, con detalle en Buenos Aires y Ciudad Autónoma de Buenos Aires.
