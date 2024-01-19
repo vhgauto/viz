@@ -2,6 +2,14 @@
 
 Figuras creadas usando **R**, de datos que me parezcan interesantes. Mi repositorio de Tidytuesday lo encuentran [acá](https://github.com/vhgauto/tidytuesday).
 
+## Elevación de CABA
+
+Mapa de elevación de la Ciudad de Buenos Aires.
+
+[Scripts](mapa_dem/script_001.R)
+
+![](mapa_dem/viz.png)
+
 ## Topografía de Argentina con emojis
 
 Mapa de rangos de altura de Argentina, usando emojis de animales.
