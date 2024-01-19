@@ -34,6 +34,10 @@ ign_parques/area_protegida.*
 /mapa_puntos_pob/arg_pob*
 /mapa_puntos_pob/sf_pob.gpkg
 /buzones_arg/departamento.*
+/mapa_dem/caba
+/mapa_dem/img
+/mapa_dem/caba_crop.tif
+/mapa_dem/caminos_crop_ppal.gpkg
 
 # History files
 .Rhistory
