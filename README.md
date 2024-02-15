@@ -144,11 +144,11 @@ Qué tan rectangulares son nuestras provincias. A partir de este post, ["The rec
 
 Archivo .gif de un corazón.
 
-[Script](corazon_gif/script__001.R)
+[Script](corazon_gif/script.R)
 
-![](https://raw.githubusercontent.com/vhgauto/viz/main/corazon_gif/viz.gif)
+![](corazon_gif/viz.gif)
 
-2023-04-10
+2024-02-14
 
 ## Provincias ordenadas por su superficie
 
