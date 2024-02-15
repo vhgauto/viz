@@ -3,6 +3,7 @@
 /provincia_superficie/Informe_supercies_de_Argentina.pdf
 /provincia_superficie/pcias.gpkg
 /provincia_superficie/posgar 2007.jpg
+/corazon_gif/viz.mp4
 /provincia_rectangulo/iterations
 /provincia_rectangulo/images_no_title
 /nombres/extra
@@ -27,16 +28,6 @@ ign_parques/area_protegida.*
 /espiral
 /osm/osm_gpkg/
 /osm_extras/
-/mapa_relieve_animado/png/
-/mapa_relieve_animado/S2/
-/mapa_puntos_pob/zip/
-/mapa_puntos_pob/arg_pob*
-/mapa_puntos_pob/sf_pob.gpkg
-/buzones_arg/departamento.*
-/mapa_dem/caba
-/mapa_dem/img
-/mapa_dem/caba_crop.tif
-/mapa_dem/caminos_crop_ppal.gpkg
 
 # History files
 .Rhistory
