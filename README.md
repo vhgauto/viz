@@ -2,6 +2,16 @@
 
 Figuras creadas usando **R**, de datos que me parezcan interesantes. Mi repositorio de Tidytuesday lo encuentran [acá](https://github.com/vhgauto/tidytuesday).
 
+## Estaciones meteorológicas
+
+Ubicación de las estaciones meteorológicas en Argentina.
+
+[Scripts](estaciones_smn/script.R)
+
+![](estaciones_smn/viz.png)
+
+2024-02-17
+
 ## Elevación de CABA
 
 Mapa de elevación de la Ciudad de Buenos Aires.
