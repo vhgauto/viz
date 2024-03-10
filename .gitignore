@@ -37,6 +37,7 @@ ign_parques/area_protegida.*
 /mapa_dem/img
 /mapa_dem/caba_crop.tif
 /mapa_dem/caminos_crop_ppal.gpkg
+/universidades/puntos*
 
 # History files
 .Rhistory
