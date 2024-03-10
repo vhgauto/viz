@@ -2,6 +2,17 @@
 
 Figuras creadas usando **R**, de datos que me parezcan interesantes. Mi repositorio de Tidytuesday lo encuentran [acá](https://github.com/vhgauto/tidytuesday).
 
+## Instituciones de ciencia y educación
+
+Mapa de establecimientos dedicados al desarrollo de actividades educativas y 
+científicas.
+
+[Scripts](universidades/script.R)
+
+![](universidades/viz.png)
+
+2024-03-09
+
 ## Estaciones meteorológicas
 
 Ubicación de las estaciones meteorológicas en Argentina.
