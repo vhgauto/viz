@@ -40,7 +40,8 @@ showtext_opts(dpi = 300)
 
 # caption
 fuente <- glue(
-  "Datos: <b style='color:{c1};'>IGN</b>, <b style='color:{c1};'>OpenTopography</b>")
+  "Datos: <b style='color:{c1};'>IGN</b>, ",
+  "<b style='color:{c1};'>OpenTopography</b>")
 autor <- glue("<span style='color:{c1};'>**Víctor Gauto**</span>")
 icon_twitter <- glue("<span style='font-family:fa-brands;'>&#xf099;</span>")
 icon_instagram <- glue("<span style='font-family:fa-brands;'>&#xf16d;</span>")
@@ -57,6 +58,10 @@ mi_caption <- glue(
 
 # polígono de Argentina
 arg <- vect("extras/pcias.gpkg")
+
+# vector con los sitios de los faros en Argentina
+browseURL("https://www.ign.gob.ar/NuestrasActividades/InformacionGeoespacial/CapasSIG")
+# Hidrografía y oceanografía / Ayuda a la navegación / Punto / Faro
 
 # puntos de los faros de Argentina
 faro <- vect("faros/ayuda_a_la_navegacion_BC050.json") |> 
