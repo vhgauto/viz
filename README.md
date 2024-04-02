@@ -2,6 +2,16 @@
 
 Figuras creadas usando **R**, de datos que me parezcan interesantes. Mi repositorio de Tidytuesday lo encuentran [acá](https://github.com/vhgauto/tidytuesday).
 
+## Faros en Argentina
+
+Faros en las costas de Argentina, con topografía como mapa base.
+
+[Scripts](faros/script.R)
+
+![](faros/viz.png)
+
+2024-02-04
+
 ## Instituciones de ciencia y educación
 
 Mapa de establecimientos dedicados al desarrollo de actividades educativas y 
