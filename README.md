@@ -8,7 +8,7 @@ Animación del avance en la instalación de torres celulares en Argentina.
 
 [Scripts](torres_celular/script.R)
 
-https://raw.githubusercontent.com/vhgauto/viz/main/torres_celular/viz.mp4
+<video src='https://raw.githubusercontent.com/vhgauto/viz/main/torres_celular/viz.mp4' width=180/>
 
 2024-04-07
 
