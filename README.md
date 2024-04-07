@@ -2,6 +2,16 @@
 
 Figuras creadas usando **R**, de datos que me parezcan interesantes. Mi repositorio de Tidytuesday lo encuentran [acá](https://github.com/vhgauto/tidytuesday).
 
+## Torres de telefonía en Argentina
+
+Animación del avance en la instalación de torres celulares en Argentina.
+
+[Scripts](torres_celular/script.R)
+
+![](torres_celular/i.mp4)
+
+2024-04-07
+
 ## Faros en Argentina
 
 Faros en las costas de Argentina, con topografía como mapa base.
