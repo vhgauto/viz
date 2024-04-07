@@ -38,6 +38,8 @@ ign_parques/area_protegida.*
 /mapa_dem/caba_crop.tif
 /mapa_dem/caminos_crop_ppal.gpkg
 /universidades/puntos*
+/torres_celular/fig/
+/torres_celular/722.csv.gz
 
 # History files
 .Rhistory
