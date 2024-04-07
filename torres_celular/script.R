@@ -239,13 +239,13 @@ framerate <- length(v_año_mes)/dur
 i_pngs <- image_read(pngs)
 
 # guardo .gif
-image_write_gif(i_pngs, "torres_celular/i.gif", delay = 1/framerate)
+image_write_gif(i_pngs, "torres_celular/viz.gif", delay = 1/framerate)
 
 # guardo .mp4
-image_write_video(i_pngs, "torres_celular/i.mp4", framerate = framerate)
+image_write_video(i_pngs, "torres_celular/viz.mp4", framerate = framerate)
 
 # abro .gif
-browseURL("torres_celular/i.gif")
+browseURL("torres_celular/viz.gif")
 
 # abro .mp4
-browseURL("torres_celular/i.mp4")
+browseURL("torres_celular/viz.mp4")
