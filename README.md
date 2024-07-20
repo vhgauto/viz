@@ -1,6 +1,6 @@
 # Mis proyectos de visualización
 
-Figuras creadas usando **R**, de datos que me parezcan interesantes. Mi repositorio de Tidytuesday lo encuentran [acá](https://github.com/vhgauto/tidytuesday).
+Figuras creadas usando `R`, de datos que me parezcan interesantes. Mi repositorio de Tidytuesday lo encuentran [acá](https://github.com/vhgauto/tidytuesday).
 
 ## Torres de telefonía en Argentina
 
