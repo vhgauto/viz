@@ -10,6 +10,8 @@ Aeropuertos activos en Argentina.
 
 ![](aeropuerto/viz.png)
 
+2024-08-03
+
 ## Plantas de potabilizadoras de agua
 
 Mapa de las plantas potabilizadoras de agua en funcionamiento.
@@ -17,6 +19,8 @@ Mapa de las plantas potabilizadoras de agua en funcionamiento.
 [Script](planta_potabilizadora/script.R)
 
 ![](planta_potabilizadora/viz.png)
+
+2024-08-03
 
 ## Torres de telefonía en Argentina
 
