@@ -109,8 +109,7 @@ g <- ggplot() +
       fill = col[5], color = col[2], linewidth = 3),
     plot.caption = element_markdown(
       family = "jet", color = c1, hjust = .5, size = 20,
-      margin = margin(b = 10)),
-    # legend.text = element_text(size = 20)
+      margin = margin(b = 10))
   )
 
 # guardo
@@ -123,4 +122,4 @@ ggsave(
 )
 
 # abro
-browseURL("planta_potabilizadora/viz.png")
+browseURL(glue("{getwd()}/planta_potabilizadora/viz.png"))

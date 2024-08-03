@@ -31,6 +31,11 @@ font_add(
   family = "jet", 
   regular = "fuentes/JetBrainsMonoNLNerdFontMono-Regular.ttf")
 
+# fontawesome
+font_add(
+  family = "fa", 
+  regular = "fuentes/Font Awesome 6 Free-Solid-900.otf")
+
 showtext_auto()
 showtext_opts(dpi = 300)
 
@@ -51,8 +56,6 @@ mi_caption <- glue(
 
 # datos -------------------------------------------------------------------
 
-# dptos <- vect("extras/dptos_continental.gpkg")
-
 pcias <- vect("extras/pcias_continental.gpkg") |> 
   project("EPSG:5346")
 
@@ -61,13 +64,15 @@ dptos_pcias <- vect("extras/dptos_pcias_continental.gpkg")
 aer <- vect("aeropuerto/puntos_de_transporte_aereo_GB005.json") |> 
   project("EPSG:5346")
 
-# as.data.frame(aer) |> 
-#   tibble() |> 
-#   filter(fun == 6)
-
 aer <- aer[aer$fun == 6]
 
 # figura ------------------------------------------------------------------
+
+# ícono de los aviones
+icon1 <- glue("<span style='font-family:fa; color:{c2};'>&#xf5b0;</span> ")
+icon2 <- glue("<span style='font-family:fa; color:{c2};'>&#xf072;</span> ")
+icon3 <- glue("<span style='font-family:fa; color:{c2};'>&#xf5af;</span> ")
+icon <- glue("{icon1} {icon2} {icon3}")
 
 # posición del subtítulo
 x_sub <- ext(aer)$xmax
@@ -76,7 +81,8 @@ y_sub <- ext(aer)$ymax
 mi_subtitle <- glue(
   "En <b style='color: {c1}'>Argentina</b> hay en",
   "funcionamiento <b style='color:{c4}'>{nrow(aer)}</b>",
-  "aeropuertos.",
+  "aeropuertos.<br>",
+  "{icon}",
   .sep = "<br>"
 )
 
@@ -93,7 +99,7 @@ g <- ggplot() +
   ) +
   # aeropuertos
   geom_sf(
-    data = aer, fill = c2, color = c1, size = 7, alpha = .8, 
+    data = aer, fill = c2, color = c1, size = 11, alpha = .8,
     stroke = 1, shape = 21) +
   # subtítulo
   annotate(
@@ -112,11 +118,16 @@ g <- ggplot() +
       family = "jet", color = c4, hjust = .5, size = 20,
       margin = margin(b = 10)),
     legend.position = "none"
-  ); ggsave(
-    plot = g,
-    filename = "aeropuerto/viz.png",
-    width = 30,
-    height = 65,
-    units = "cm"
-  ); browseURL("aeropuerto/viz.png")
+  )
 
+# guardo
+ggsave(
+  plot = g,
+  filename = "aeropuerto/viz.png",
+  width = 30,
+  height = 65,
+  units = "cm"
+)
+
+# abro
+browseURL(glue("{getwd()}/aeropuerto/viz.png"))
