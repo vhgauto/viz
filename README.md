@@ -14,7 +14,7 @@ Mapa de las plantas potabilizadoras de agua en funcionamiento.
 
 Animación del avance en la instalación de torres celulares en Argentina.
 
-[Scripts](torres_celular/script.R)
+[Script](torres_celular/script.R)
 
 https://github.com/vhgauto/viz/assets/45094467/8b8194b6-ffd1-4ed6-8bad-ace2f8a0466b
 
@@ -24,7 +24,7 @@ https://github.com/vhgauto/viz/assets/45094467/8b8194b6-ffd1-4ed6-8bad-ace2f8a04
 
 Faros en las costas de Argentina, con topografía como mapa base.
 
-[Scripts](faros/script.R)
+[Script](faros/script.R)
 
 ![](faros/viz.png)
 
@@ -35,7 +35,7 @@ Faros en las costas de Argentina, con topografía como mapa base.
 Mapa de establecimientos dedicados al desarrollo de actividades educativas y 
 científicas.
 
-[Scripts](universidades/script.R)
+[Script](universidades/script.R)
 
 ![](universidades/viz.png)
 
@@ -45,7 +45,7 @@ científicas.
 
 Ubicación de las estaciones meteorológicas en Argentina.
 
-[Scripts](estaciones_smn/script.R)
+[Script](estaciones_smn/script.R)
 
 ![](estaciones_smn/viz.png)
 
@@ -55,7 +55,7 @@ Ubicación de las estaciones meteorológicas en Argentina.
 
 Mapa de elevación de la Ciudad de Buenos Aires.
 
-[Scripts](mapa_dem/script_001.R)
+[Script](mapa_dem/script_001.R)
 
 ![](mapa_dem/viz.png)
 
@@ -63,7 +63,7 @@ Mapa de elevación de la Ciudad de Buenos Aires.
 
 Mapa de rangos de altura de Argentina, usando emojis de animales.
 
-[Scripts](mapa_letras/script_001.R)
+[Script](mapa_letras/script_001.R)
 
 ![](mapa_letras/viz.png)
 
@@ -71,7 +71,7 @@ Mapa de rangos de altura de Argentina, usando emojis de animales.
 
 Ubicación de buzones en Argentina, con detalle en Buenos Aires y Ciudad Autónoma de Buenos Aires.
 
-[Scripts](buzones_arg/script_001.R)
+[Script](buzones_arg/script_001.R)
 
 ![](buzones_arg/viz.png)
 
@@ -79,7 +79,7 @@ Ubicación de buzones en Argentina, con detalle en Buenos Aires y Ciudad Autóno
 
 Mapa del relieve de Argentina en estilo *joyplot*, o *ridgeline* (crestas).
 
-[Scripts](mapa_ridges/script_001.R)
+[Script](mapa_ridges/script_001.R)
 
 ![](mapa_ridges/viz.png)
 
@@ -87,7 +87,7 @@ Mapa del relieve de Argentina en estilo *joyplot*, o *ridgeline* (crestas).
 
 Mapa de Argentina mostrando la distribución de la población.
 
-[Scripts](mapa_puntos_pob/script_001.R)
+[Script](mapa_puntos_pob/script_001.R)
 
 ![](mapa_puntos_pob/viz.png)
 
@@ -95,7 +95,7 @@ Mapa de Argentina mostrando la distribución de la población.
 
 Bandera de Argentina con el mapa de Argentina, con las letras de Argentina.
 
-[Scripts](arg_3x3/script_001.R)
+[Script](arg_3x3/script_001.R)
 
 ![](arg_3x3/arg.png)
 
@@ -103,7 +103,7 @@ Bandera de Argentina con el mapa de Argentina, con las letras de Argentina.
 
 Imagen de Chaco, Corrientes y el puente sobre el Río Paraná.
 
-[Scripts](mapa_relieve/script_puente.R)
+[Script](mapa_relieve/script_puente.R)
 
 ![](mapa_relieve/puente.png)
 
@@ -111,7 +111,7 @@ Imagen de Chaco, Corrientes y el puente sobre el Río Paraná.
 
 Datos de OpenStreetMap, descargados de [Geofabrik](https://download.geofabrik.de/south-america.html). A cada observación le asigné un color distinto, para generar un mapa pintorezco.
 
-[Scripts](osm/script__001.R)
+[Script](osm/script__001.R)
 
 ![](osm/viz.png)
 
@@ -119,7 +119,7 @@ Datos de OpenStreetMap, descargados de [Geofabrik](https://download.geofabrik.de
 
 Datos del [Instituto Geográfico Nacional](https://www.ign.gob.ar/NuestrasActividades/InformacionGeoespacial/CapasSIG) de líneas de energía y plantas transformadoras.
 
-[Scripts](ign_electricidad/script__001.R)
+[Script](ign_electricidad/script__001.R)
 
 ![](ign_electricidad/viz.png)
 
@@ -127,7 +127,7 @@ Datos del [Instituto Geográfico Nacional](https://www.ign.gob.ar/NuestrasActivi
 
 Datos del [Instituto Geográfico Nacional](https://www.ign.gob.ar/NuestrasActividades/InformacionGeoespacial/CapasSIG) de áreas protegidas de Argentina.
 
-[Scripts](ign_parques/script__001.R)
+[Script](ign_parques/script__001.R)
 
 ![](ign_parques/viz.png)
 
@@ -135,7 +135,7 @@ Datos del [Instituto Geográfico Nacional](https://www.ign.gob.ar/NuestrasActivi
 
 Datos del [Instituto Geográfico Nacional](https://www.ign.gob.ar/NuestrasActividades/InformacionGeoespacial/CapasSIG) de rutas a diferentes jurisdicciones.
 
-[Scripts](ign_red_vial/script__001.R)
+[Script](ign_red_vial/script__001.R)
 
 ![](ign_red_vial/viz.png)
 
@@ -143,7 +143,7 @@ Datos del [Instituto Geográfico Nacional](https://www.ign.gob.ar/NuestrasActivi
 
 Tomando como inspiración esta [figura](https://nombres.datos.gob.ar/), grafiqué la evolución en popularidad de los 10 nombres más frecuentes (femeninos y masculinos). El portal de datos de Argentina tiene un [gráfico interactivo](https://nombres.datos.gob.ar/).
 
-[Scripts](nombres/script__001.R)
+[Script](nombres/script__001.R)
 
 ![](nombres/viz_M.png)
 
@@ -153,7 +153,7 @@ Tomando como inspiración esta [figura](https://nombres.datos.gob.ar/), grafiqu�
 
 Datos de temperatura mensual, desde enero 2020 a abril 2023, provenientes de [ERA5](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-land-monthly-means?tab=overview). Basado en [este](https://www.youtube.com/watch?v=2VHuaFqtAsY) tutorial.
 
-[Scripts](clima_temperatura/script__001.R)
+[Script](clima_temperatura/script__001.R)
 
 ![](clima_temperatura/viz.png)
 
@@ -163,7 +163,7 @@ Datos de temperatura mensual, desde enero 2020 a abril 2023, provenientes de [ER
 
 Tomando de base los mapas generados por [Prettymapp](https://chrieke-prettymapp-streamlit-prettymappapp-1k0qxh.streamlit.app/), hice mi propia versión con las capitales argentinas.
 
-[Scripts](pretty_map/script__001.R)
+[Script](pretty_map/script__001.R)
 
 ![](pretty_map/map/CapitalFederal_Obelisco.png)
 
@@ -173,7 +173,7 @@ Tomando de base los mapas generados por [Prettymapp](https://chrieke-prettymapp-
 
 Relieve continental y del lecho marino de Argentina, siguiendo este [tutorial](https://www.youtube.com/watch?v=zoLChBALc1k).
 
-[Scripts](mapa_topografico/script__001.R)
+[Script](mapa_topografico/script__001.R)
 
 ![](mapa_topografico/viz.png)
 
@@ -183,7 +183,7 @@ Relieve continental y del lecho marino de Argentina, siguiendo este [tutorial](h
 
 Qué tan rectangulares son nuestras provincias. A partir de este post, ["The rectangularness of countries"](https://pappubahry.com/misc/rectangles/), y con modificaciones menores, obtuve los mismos resultados pero aplicado a nuestra región.
 
-[Scripts](provincia_rectangulo/script__001.R)
+[Script](provincia_rectangulo/script__001.R)
 
 ![](provincia_rectangulo/viz.png)
 
