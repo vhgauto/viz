@@ -2,6 +2,14 @@
 
 Figuras creadas usando `R`, de datos que me parezcan interesantes. Mi repositorio de Tidytuesday lo encuentran [acá](https://github.com/vhgauto/tidytuesday).
 
+## Plantas de potabilizadoras de agua
+
+Mapa de las plantas potabilizadoras de agua en funcionamiento.
+
+[Script](planta_potabilizadora/script.R)
+
+![](planta_potabilizadora/viz.png)
+
 ## Torres de telefonía en Argentina
 
 Animación del avance en la instalación de torres celulares en Argentina.
