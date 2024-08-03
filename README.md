@@ -2,6 +2,14 @@
 
 Figuras creadas usando `R`, de datos que me parezcan interesantes. Mi repositorio de Tidytuesday lo encuentran [acá](https://github.com/vhgauto/tidytuesday).
 
+## Aeropuertos
+
+Aeropuertos activos en Argentina.
+
+[Script](aeropuerto/script.R)
+
+![](aeropuerto/viz.png)
+
 ## Plantas de potabilizadoras de agua
 
 Mapa de las plantas potabilizadoras de agua en funcionamiento.
