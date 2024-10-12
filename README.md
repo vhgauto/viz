@@ -2,6 +2,16 @@
 
 Figuras creadas usando `R`, de datos que me parezcan interesantes. Mi repositorio de Tidytuesday lo encuentran [acá](https://github.com/vhgauto/tidytuesday).
 
+## Mapa bivariado de precipitación y temperatura
+
+Promedio de los últimos 50 años de precipitación y temperatura, como mapa bivariado.
+
+[Script](clima_bivariado/script.R)
+
+![](clima_bivariado/viz.png)
+
+2024-10-12
+
 ## Aeropuertos
 
 Aeropuertos activos en Argentina.
