@@ -8,7 +8,6 @@ library(glue)
 library(ggtext)
 library(ggplot2)
 library(purrr)
-# library(tidyverse)
 
 # colores & fuentes -------------------------------------------------------
 
