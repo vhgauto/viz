@@ -2,6 +2,12 @@
 
 Figuras creadas usando `R`, de datos que me parezcan interesantes. Mi repositorio de Tidytuesday lo encuentran [acá](https://github.com/vhgauto/tidytuesday).
 
+## Animación de rutas nacionales y provinciales
+
+Expansión de las rutas nacionales y provinciales a partir del Obelisco.
+
+[Script](crecimiento_rutas/script.R)
+
 ## Mapa bivariado de precipitación y temperatura
 
 Promedio de los últimos 50 años de precipitación y temperatura, como mapa bivariado.
