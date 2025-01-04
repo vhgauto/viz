@@ -8,6 +8,8 @@ Expansión de las rutas nacionales y provinciales a partir del Obelisco.
 
 [Script](crecimiento_rutas/script.R)
 
+https://github.com/user-attachments/assets/054a9e35-e422-47a9-a0f1-b868b6d06008
+
 ## Mapa bivariado de precipitación y temperatura
 
 Promedio de los últimos 50 años de precipitación y temperatura, como mapa bivariado.
