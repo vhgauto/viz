@@ -18,10 +18,6 @@ c3 <- "grey95"
 c4 <- "grey90"
 
 font_add(family = "ubuntu", regular = "fuentes/Ubuntu-Regular.ttf")
-font_add(
-  family = "jet",
-  regular = "fuentes/JetBrainsMonoNLNerdFontMono-Regular.ttf"
-)
 
 showtext_auto()
 showtext_opts(dpi = 300)
