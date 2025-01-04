@@ -42,6 +42,7 @@ ign_parques/area_protegida.*
 /torres_celular/722.csv.gz
 /faros/ayuda_a_la_navegacion_BC050.json
 /faros/faro.pdf
+crecimiento_rutas/fig/*
 
 # History files
 .Rhistory
