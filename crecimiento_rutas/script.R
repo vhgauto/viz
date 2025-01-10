@@ -1,3 +1,6 @@
+# inspiración
+# https://x.com/joewdavies/status/1418570318822715397
+
 # paquetes ----------------------------------------------------------------
 
 library(terra)
